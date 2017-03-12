@@ -19,12 +19,13 @@ SOURCES += src/harbour-lunarcalendar.cpp
 OTHER_FILES += qml/harbour-lunarcalendar.qml \
     qml/cover/CoverPage.qml \
     qml/pages/FirstPage.qml \
-    rpm/harbour-lunarcalendar.changes.in \
     rpm/harbour-lunarcalendar.spec \
     rpm/harbour-lunarcalendar.yaml \
+    rpm/harbour-lunarcalendar.changes \
     qml/js/LunarCalendar.js \
     qml/js/chinese-lunar.js \
-    translations/*.ts \
+    translations/harbour-lunarcalendar-zh_CN.ts \
+    translations/harbour-lunarcalendar.ts \
     harbour-lunarcalendar.desktop
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 256x256
@@ -37,4 +38,12 @@ CONFIG += sailfishapp_i18n
 # planning to localize your app, remember to comment out the
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
-TRANSLATIONS += translations/harbour-lunarcalendar-de.ts
+TRANSLATIONS += translations/harbour-lunarcalendar-zh_CN.ts
+
+DISTFILES += \
+    qml/pages/About.qml
+zh.path = /usr/share/$${TARGET}/translations
+zh.files += $$PWD/translations/harbour-lunarcalendar-zh_CN.qm
+INSTALLS += zh
+
+
