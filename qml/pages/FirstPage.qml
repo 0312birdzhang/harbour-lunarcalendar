@@ -78,8 +78,26 @@ Page {
                 onClicked: pageStack.push(Qt.resolvedUrl("About.qml"));
             }
             MenuItem {
-                text: qsTr("Back to Today")
-                onClicked: datePicker.date = new Date();
+                text: qsTr("Return Today")
+                onClicked: {
+                    datePicker.date = new Date();
+                    var year = datePicker.year;
+                    var month = datePicker.month;
+                    var day = datePicker.day;
+                    eventsModel.clear();
+                    eventsModel.append({
+                                            "note":year+"-"+month+"-"+day
+                                        });
+                    eventsModel.append({
+                                            "note":showLunarInfo(year,month,day)
+                                        });
+                    var festival = showFestival(year,month,day)
+                    for(var i in festival.split(" ")){
+                        eventsModel.append({
+                                            "note":festival.split(" ")[i]
+                                        });
+                    }
+                }
             }
         }
 

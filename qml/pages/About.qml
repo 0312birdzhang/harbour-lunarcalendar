@@ -61,6 +61,10 @@ Page {
                 onLinkActivated: Qt.openUrlExternally("mailto:0312birdzhang@gmail.com")
             }
 
+            SectionHeader {
+                text: qsTr("License")
+            }
+
             Label {
                 text: qsTr("Licensed under the BSD-3-Clause license")
                 font.pixelSize: Theme.fontSizeSmall
