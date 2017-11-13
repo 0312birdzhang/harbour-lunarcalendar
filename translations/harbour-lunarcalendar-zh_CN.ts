@@ -62,6 +62,10 @@
         <translation>回到今天</translation>
     </message>
     <message>
+        <source>Go to someday</source>
+        <translation>转到日期</translation>
+    </message>
+    <message>
         <source>Lunar</source>
         <translation>万年历</translation>
     </message>
