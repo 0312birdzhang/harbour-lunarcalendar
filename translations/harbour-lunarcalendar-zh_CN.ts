@@ -43,6 +43,10 @@
         <source>See sources for Luna on GitHub</source>
         <translation>查看Luna的源码</translation>
     </message>
+    <message>
+        <source>License</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CoverPage</name>
@@ -56,10 +60,6 @@
     <message>
         <source>About</source>
         <translation>关于</translation>
-    </message>
-    <message>
-        <source>Back to Today</source>
-        <translation>回到今天</translation>
     </message>
     <message>
         <source>Go to someday</source>
@@ -80,6 +80,10 @@
     <message>
         <source>Custom events</source>
         <translation>自定义事件</translation>
+    </message>
+    <message>
+        <source>Return Today</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

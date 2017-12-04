@@ -43,6 +43,10 @@
         <source>This project is a fork of Luna developed by Wunderfitz. Luna is based on SailGirlz,SailGirlz is based on MaeGirls by Stefanos Harhalakis. Thanks for making it available under the conditions of the BSD-3-Clause license!</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>License</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CoverPage</name>
@@ -55,10 +59,6 @@
     <name>FirstPage</name>
     <message>
         <source>About</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Back to Today</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -75,6 +75,14 @@
     </message>
     <message>
         <source>Festival information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Go to someday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Return Today</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
