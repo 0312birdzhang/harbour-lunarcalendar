@@ -45,7 +45,7 @@
     </message>
     <message>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>许可证</translation>
     </message>
 </context>
 <context>
@@ -70,10 +70,6 @@
         <translation>万年历</translation>
     </message>
     <message>
-        <source>Comming soon</source>
-        <translation>即将到来</translation>
-    </message>
-    <message>
         <source>Festival information</source>
         <translation>节日信息</translation>
     </message>
@@ -83,7 +79,7 @@
     </message>
     <message>
         <source>Return Today</source>
-        <translation type="unfinished"></translation>
+        <translation>返回今日</translation>
     </message>
 </context>
 </TS>

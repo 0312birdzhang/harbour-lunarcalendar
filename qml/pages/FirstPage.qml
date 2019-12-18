@@ -182,7 +182,6 @@ Page {
                     daysVisible: true
                     anchors.top: weekDaysSimulator.bottom
                     onMonthChanged:{
-                        console.log("changed")
                         eventsModel.clear()
                         eventsModel.append({
                                                "note":datePicker.year+"-"+datePicker.month+"-"+datePicker.day
@@ -397,44 +396,44 @@ Page {
                                 }
                             }
                     }
-                    Item{
-                        width: lunaView.width
-                        height: lunaView.height
-                        SilicaListView{
-                            id:userEventView
-                            height: lunaView.height
-                            width: lunaView.width
-                            header:Item{width: 1;height: Theme.itemSizeExtraSmall}
-                            clip: true
-                            model: 0
-                            delegate: BackgroundItem {
-                                Label {
-                                    x: Theme.horizontalPageMargin
-                                    text: "Item" + " " + index
-                                    font.pixelSize: Theme.fontSizeSmall
-                                    horizontalAlignment: Text.AlignRight
-                                    color: Theme.primaryColor
-                                    wrapMode: Text.WordWrap
-                                    anchors.verticalCenter: parent.verticalCenter
-                                }
-                            }
-                        }
+//                    Item{
+//                        width: lunaView.width
+//                        height: lunaView.height
+//                        SilicaListView{
+//                            id:userEventView
+//                            height: lunaView.height
+//                            width: lunaView.width
+//                            header:Item{width: 1;height: Theme.itemSizeExtraSmall}
+//                            clip: true
+//                            model: 0
+//                            delegate: BackgroundItem {
+//                                Label {
+//                                    x: Theme.horizontalPageMargin
+//                                    text: "Item" + " " + index
+//                                    font.pixelSize: Theme.fontSizeSmall
+//                                    horizontalAlignment: Text.AlignRight
+//                                    color: Theme.primaryColor
+//                                    wrapMode: Text.WordWrap
+//                                    anchors.verticalCenter: parent.verticalCenter
+//                                }
+//                            }
+//                        }
 
-                        Label {
-                            id: noLunaPlaceholder
-                            anchors.fill: parent
-                            wrapMode: Text.Wrap
-                            horizontalAlignment: Text.AlignHCenter
-                            verticalAlignment: Text.AlignVCenter
-                            font {
-                                pixelSize: Theme.fontSizeLarge
-                                family: Theme.fontFamilyHeading
-                            }
-                            color: Theme.rgba(Theme.highlightColor, 0.6)
-                            visible: userEventView.count === 0
-                            text: qsTr("Comming soon")
-                        }
-                    }
+//                        Label {
+//                            id: noLunaPlaceholder
+//                            anchors.fill: parent
+//                            wrapMode: Text.Wrap
+//                            horizontalAlignment: Text.AlignHCenter
+//                            verticalAlignment: Text.AlignVCenter
+//                            font {
+//                                pixelSize: Theme.fontSizeLarge
+//                                family: Theme.fontFamilyHeading
+//                            }
+//                            color: Theme.rgba(Theme.highlightColor, 0.6)
+//                            visible: userEventView.count === 0
+//                            text: qsTr("Comming soon")
+//                        }
+//                    }
 
                 }
             }

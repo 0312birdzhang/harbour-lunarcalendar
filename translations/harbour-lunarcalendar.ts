@@ -66,10 +66,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Comming soon</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Custom events</source>
         <translation type="unfinished"></translation>
     </message>
