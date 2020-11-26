@@ -13,7 +13,7 @@ Name:       harbour-lunarcalendar
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Lunar Calendar for SailfishOS
-Version:    0.1.4
+Version:    0.1.5
 Release:    1
 Group:      Qt/Qt
 License:    LICENSE
@@ -28,7 +28,7 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  desktop-file-utils
 
 %description
-Short description of my Sailfish OS Application
+农历与放假安排程序
 
 
 %prep
