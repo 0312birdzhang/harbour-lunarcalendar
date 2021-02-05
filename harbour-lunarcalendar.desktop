@@ -2,7 +2,7 @@
 Type=Application
 X-Nemo-Application-Type=silica-qt5
 Icon=harbour-lunarcalendar
-Exec=harbour-lunarcalendar
+Exec=sailfish-qml harbour-lunarcalendar
 Name=LunarCalendar
 # translation example:
 # your app name in German locale (de)

@@ -12,9 +12,7 @@
 # The name of your application
 TARGET = harbour-lunarcalendar
 
-CONFIG += sailfishapp
-
-SOURCES += src/harbour-lunarcalendar.cpp
+CONFIG += sailfishapp_qml
 
 OTHER_FILES += qml/harbour-lunarcalendar.qml \
     qml/cover/CoverPage.qml \
