@@ -25,7 +25,7 @@ Page {
             }
 
             Label {
-                text: qsTr("Version:") + "0.1.5"
+                text: qsTr("Version:") + "0.1.6"
                 horizontalAlignment: Text.AlignHCenter
                 font.pixelSize: Theme.fontSizeLarge
                 anchors.horizontalCenter: parent.horizontalCenter

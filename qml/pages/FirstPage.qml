@@ -292,7 +292,7 @@ Page {
                                 radius: 2
                                 visible: {
                                     var lunar = getLunar(year,month,day);
-                                    return lunar.worktime != 0||lunar.worktime != "0"
+                                    return lunar.worktime !== 0
                                 }
                                 color: {
                                     var lunar = getLunar(year,month,day);

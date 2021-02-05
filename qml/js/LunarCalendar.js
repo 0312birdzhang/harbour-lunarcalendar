@@ -347,7 +347,7 @@
 	 * 由于农历24节气交节时刻采用近似算法，可能存在少量误差(30分钟内)
 	 */
 	function getTerm(y,n) {
-		var offDate = new Date( ( 31556925974.7*(y-1890) + termInfo[n]*60000  ) + Date.UTC(1890,0,5,16,2,31) );
+        var offDate = new Date( ( 31556925974.7*(y-1890) + termInfo[n]*60000  ) + Date.UTC(1890,0,5,16,2,31) );
 		return(offDate.getUTCDate());
 	};
 
@@ -519,14 +519,14 @@
 		}else{
 			lunarFtv = lunarFestival[formateDayD4(lunarDate[1],lunarDate[2])];
 		}
-
+		var isworkday = worktime['y'+year][formateDayD4(month,day)];
 		var res = {
 			zodiac : getYearZodiac(GanZhiYear),
 			GanZhiYear : getLunarYearName(GanZhiYear),
 			GanZhiMonth : getLunarMonthName(year,GanZhiMonth),
 			GanZhiDay : getLunarDayName(year,month,day),
 			//放假安排：0无特殊安排，1工作，2放假
-			worktime : worktime['y'+year] && worktime['y'+year][formateDayD4(month,day)] ? worktime['y'+year][formateDayD4(month,day)] : 0,
+            worktime : isworkday !== undefined ? isworkday : 0,
 			term : termList[formateDayD4(month,day)],
 
 			lunarYear : lunarDate[0],
